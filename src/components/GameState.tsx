@@ -5,6 +5,7 @@ interface IProps {
   gameOver: boolean;
   gameState: number;
 }
+
 export const GameState = ({ playerName, currentScore, bestScore, gameOver }: IProps) => {
   return (
     <div className="flex flex-col items-center">
