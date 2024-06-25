@@ -1,0 +1,127 @@
+#root {
+  height: 100vh;
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+}
+
+@font-face {
+  font-family: 'Abraham';
+  src: local('abraham'), url('/fonts/Abraham.otf') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Abraham';
+  src: local('abraham'), url('./fonts/Abraham.otf') format('woff');
+  font-display: swap;
+}
+body{
+  overflow: hidden;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.text-box::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.moveable-origin{
+  visibility: hidden !important
+}
+#dragElement-naviKeni .moveable-line{
+  visibility: hidden !important
+}
+
+#dragElement-text .moveable-line{
+  background: #ffffff00 !important;
+  padding: 5px;
+
+}
+
+#dragElement-jump-under-click .moveable-line, #dragElement-jump-on-click .moveable-line{
+  background: #A4A3AE !important;
+}
+#dragElement-jump-under-notclick .moveable-line, #dragElement-jump-on-notclick .moveable-line{
+  visibility: hidden !important
+}
+
+#dragElement-jump-under-click .moveable-direction.moveable-e, #dragElement-jump-under-click .moveable-direction.moveable-w,
+#dragElement-jump-on-click .moveable-direction.moveable-e, #dragElement-jump-on-click .moveable-direction.moveable-w {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #ffffff00 !important;
+
+  height: 18px !important;
+  border: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+#dragElement-jump-under-notclick .moveable-direction.moveable-e, #dragElement-jump-under-notclick .moveable-direction.moveable-w,
+#dragElement-jump-on-notclick .moveable-direction.moveable-e, #dragElement-jump-on-notclick .moveable-direction.moveable-w {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #ffffff00 !important;
+
+  height: 18px !important;
+  border: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+#dragElement-jump-on-click .moveable-direction.moveable-e, #dragElement-jump-on-click .moveable-direction.moveable-w {
+  margin-top: 30px !important;
+}
+
+#dragElement-jump-under-click .moveable-direction.moveable-e, #dragElement-jump-under-click .moveable-direction.moveable-w {
+  margin-top: -50px !important;
+}
+
+#dragElement-jump-under-click .moveable-direction.moveable-e, #dragElement-jump-on-click .moveable-direction.moveable-e {
+  background-image: url('../public/assets/icons/resizeRight.svg')  !important;
+  margin-inline: -1px !important;
+}
+
+#dragElement-jump-under-click .moveable-direction.moveable-w, #dragElement-jump-on-click .moveable-direction.moveable-w{
+  background-image: url('../public/assets/icons/resizeLeft.svg')  !important;
+  margin-inline:-14px !important;
+}
