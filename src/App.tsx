@@ -4,7 +4,6 @@ import { LogIn } from "./components/LogIn";
 import { GameState } from "./components/GameState";
 import { LightBulbs } from "./components/LightBulbs";
 import { Button } from "./components/ui/button";
-import React from "react";
 
 const App = () => {
   const [playerName, setPlayerName] = useState("");
@@ -43,7 +42,7 @@ const App = () => {
     setGameStarted(true);
     setGameOver(false);
     setCurrentScore(0);
-    setSequence([Math.floor(Math.random() * 6), 1, 1]);
+    setSequence([Math.floor(Math.random() * 6)]);
     setGameState(-1);
   };
 
